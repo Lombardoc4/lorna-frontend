@@ -12,7 +12,6 @@ const DetailedAlbum = () => {
 }
 
 const albumDetails = ({ record, records }) => {
-  console.log(record)
   return (
     <>
       <div className="container section">
@@ -41,7 +40,7 @@ const albumDetails = ({ record, records }) => {
                 aria-labelledby="dropdownMenuLink"
               >
                 <div className="d-flex flex-column px-3">
-                  {record.albumLinks.map((link) => {
+                  {record.streamLinks.map((link) => {
                     return (
                       <a key={link.link} href={link.link} className="my-2">
                         {link.service}
