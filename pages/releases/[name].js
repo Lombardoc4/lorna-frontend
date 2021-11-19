@@ -16,7 +16,7 @@ const albumDetails = ({ record, records }) => {
     <>
       <div className="container section">
         <div className="row g-0">
-          <div className="col-md-6">
+          <div className="col-md-6 order-2 order-lg-1">
             <div className="albumType mb-3">
               <p className="mb-0" style={{ paddingTop: "2px" }}>
                 {record.albumType}
@@ -62,7 +62,7 @@ const albumDetails = ({ record, records }) => {
               })}
             </p>
           </div>
-          <div className="col-md-5">
+          <div className="col-md-5 order-1 order-lg-2">
             <NextImage image={record.cover} />
           </div>
         </div>
