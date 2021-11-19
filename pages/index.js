@@ -23,7 +23,7 @@ const Home = ({ records, homepage, latestAlbum }) => {
                   SOLD OUT
                 </p>
               </div>
-              <h1 className=" fw-bolder">...And I Return To Nothingness</h1>
+              <h1 className="fw-bolder">...And I Return To Nothingness</h1>
             </a>
           </Link>
         </div>
