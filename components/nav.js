@@ -15,7 +15,7 @@ const Nav = () => {
           className="navbar-brand d-lg-none m-0 w-100"
           onClick={() => toggleNav()}
         >
-          <h1 className="mb-0 text-center">Lorna Shore</h1>
+          <h1 className="mb-0 text-center fw-bolder">Lorna Shore</h1>
         </a>
         <div
           className={`collapse navbar-collapse ${collapse && "show"}`}
