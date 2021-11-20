@@ -2,6 +2,7 @@
   "name": "lorna-shore-frontend",
   "version": "0.1.0",
   "private": true,
+  "author": "lom13",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
