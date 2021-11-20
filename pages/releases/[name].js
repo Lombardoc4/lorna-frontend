@@ -1,6 +1,7 @@
 import Records from "../../components/records"
 import { fetchAPI } from "../../lib/api"
 import NextImage from "../../components/image"
+import Seo from "../../components/seo"
 
 const DetailedAlbum = () => {
   ;<div className="container section">
@@ -12,8 +13,10 @@ const DetailedAlbum = () => {
 }
 
 const albumDetails = ({ record, records }) => {
+  const metaDescription = `Lorna Shora's ${record.name} ${record.albumType.charAt(0).toUpperCase() + record.albumType.slice(1)} released on ${record.releaseDate}`
   return (
     <>
+      {/* <Seo metaTitle={record.name} metaDescription={metaDescription} shareImage={record.cover}/> */}
       <div className="container section">
         <div className="row g-0">
           <div className="col-md-6 order-2 order-lg-1">

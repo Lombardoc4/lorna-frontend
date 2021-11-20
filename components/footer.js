@@ -33,6 +33,11 @@ const Footer = () => {
           >
             <u>Shop</u>
           </a>
+          <div>
+            <h4 className="text-center">Listen Now</h4>
+            <p>Spotify</p>
+            <p>Apple Music</p>
+          </div>
           <div className="mt-auto">
             <p className="mb-0 copyright">© Lorna Shore 2021</p>
           </div>
