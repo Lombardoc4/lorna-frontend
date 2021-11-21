@@ -34,7 +34,7 @@ const Home = ({ records, homepage, latestAlbum }) => {
           </div>
           <Link href="https://lornashorestore.com/">
             <a className="d-lg-none position-absolute top-50 start-50 translate-middle text-center display-1 fw-bolder text-white">
-              Store
+              <h1 className="mb-0">Store</h1>
             </a>
           </Link>
 

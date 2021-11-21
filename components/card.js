@@ -4,7 +4,7 @@ import NextImage from "./image"
 
 const EventCard = ({ event }) => {
   return (
-    <Link as={`/event/${event.slug}`} href={`/event/${event.slug}.html`}>
+    <Link href={`/event/${event.slug}.html`}>
       <a className="uk-link-reset">
         <div className="uk-card uk-card-muted">
           <div className="uk-card-media-top">
@@ -26,7 +26,7 @@ const EventCard = ({ event }) => {
 
 const RecordCard = ({ record }) => {
   return (
-    <Link as={`/releases/${record.slug}`} href={`/releases/${record.slug}.html`}>
+    <Link href={`/releases/${record.slug}.html`}>
       <a className="d-flex flex-wrap text-decoration-none" id={record.slug}>
         <div className="custom-card">
           <NextImage image={record.cover} />
