@@ -34,9 +34,9 @@ const Footer = () => {
             <u>Shop</u>
           </a>
           <h4 className="text-center">Listen Now</h4>
-          <div className="d-flex">
-            <p>Spotify</p>
-            <p>Apple Music</p>
+          <div className="d-flex justify-content-around">
+            <a href="https://open.spotify.com/artist/6vXYoy8ouRVib302zxaxFF?si=3leWUb0STYeByjH355o-7A" target="_blank" rel="noreferrer">Spotify</a>
+            <a href="https://music.apple.com/us/artist/lorna-shore/385220213" target="_blank" rel="noreferrer">Apple Music</a>
           </div>
           <div className="mt-auto">
             <p className="mb-0 copyright">© Lorna Shore 2021</p>
