@@ -23,19 +23,20 @@ const Footer = () => {
           >
             Youtube
           </a>
-        </u>
-        <div className="d-flex flex-column">
           <a
             href="https://lornashorestore.com/"
             target="_blank"
             className="text-reset"
             rel="noreferrer"
           >
-            <u>Shop</u>
+            Shop
           </a>
+        </u>
+        <div className="d-flex flex-column">
           <h4 className="text-center">Listen Now</h4>
           <div className="d-lg-flex justify-content-around">
             <a className="text-reset" href="https://open.spotify.com/artist/6vXYoy8ouRVib302zxaxFF?si=3leWUb0STYeByjH355o-7A" target="_blank" rel="noreferrer">Spotify</a>
+            <br className="d-lg-none"/>
             <a className="text-reset" href="https://music.apple.com/us/artist/lorna-shore/385220213" target="_blank" rel="noreferrer">Apple Music</a>
           </div>
           <div className="mt-auto">
