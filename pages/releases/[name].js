@@ -89,7 +89,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const records = await fetchAPI("/records?_sort=email:ASC")
+  const records = await fetchAPI("/records?_sort=releaseDate:DESC")
   // Run API calls in parallel
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
