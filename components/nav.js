@@ -46,7 +46,7 @@ const Nav = () => {
                 Shows
               </a>
             </Link>
-            <Link as="releases" href="/releases.html">
+            <Link as="/releases" href="/releases.html">
               <a
                 onClick={() => toggleNav()}
                 className="text-reset fs-5 my-2 my-lg-0"
