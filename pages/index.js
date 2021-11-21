@@ -4,8 +4,7 @@ import NextImage from "../components/image"
 import Link from "next/link"
 import { fetchAPI } from "../lib/api"
 
-const Home = ({ records, homepage, latestAlbum }) => {
-  console.log(latestAlbum)
+const Home = ({ homepage, latestAlbum }) => {
   return (
     <>
       <Seo seo={homepage.seo} />
@@ -65,14 +64,13 @@ const Home = ({ records, homepage, latestAlbum }) => {
 
 export async function getStaticProps() {
   // Run API calls in parallel
-  const [records, homepage, latestAlbum] = await Promise.all([
-    fetchAPI("/records"),
+  const [homepage, latestAlbum] = await Promise.all([
     fetchAPI("/homepage"),
     fetchAPI(`/records?slug=and-i-return-to-nothingness`),
   ])
 
   return {
-    props: { records, homepage, latestAlbum },
+    props: { homepage, latestAlbum },
     revalidate: 1,
   }
 }

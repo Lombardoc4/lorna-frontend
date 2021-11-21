@@ -14,7 +14,7 @@ const albumDetails = ({ record, records }) => {
           <div className="col-md-6 order-2 order-md-1">
             <div className="albumType mb-3">
               <p className="mb-0" style={{ paddingTop: "2px" }}>
-                {record.albumType}
+                {record.albumType === 'studio' ? 'Full Length' : record.albumType }
               </p>
             </div>
             <h2>{record.name}</h2>
@@ -89,7 +89,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const records = await fetchAPI("/records")
+  const records = await fetchAPI("/records?_sort=email:ASC")
   // Run API calls in parallel
   // params contains the post `id`.
   // If the route is like /posts/1, then params.id is 1
