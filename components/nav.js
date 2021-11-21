@@ -38,7 +38,7 @@ const Nav = () => {
                 Home
               </a>
             </Link>
-            <Link href="/shows">
+            <Link as="/shows" href="/shows.html">
               <a
                 onClick={() => toggleNav()}
                 className="text-reset fs-5 my-2 my-lg-0"
@@ -46,7 +46,7 @@ const Nav = () => {
                 Shows
               </a>
             </Link>
-            <Link href="/releases">
+            <Link as="releases" href="/releases.html">
               <a
                 onClick={() => toggleNav()}
                 className="text-reset fs-5 my-2 my-lg-0"
