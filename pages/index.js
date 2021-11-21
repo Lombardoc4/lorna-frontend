@@ -19,7 +19,7 @@ const Home = ({ records, homepage, latestAlbum }) => {
 
               <div className="w-50  mx-auto py-3 position-relative">
                 <NextImage image={latestAlbum[0].cover} />
-                <p className="position-absolute top-0 start-100 translate-middle-x badge bg-danger fs-4 fw-bolder mb-0">
+                <p className="pt-1 position-absolute top-0 start-100 translate-middle-x badge bg-danger fs-4 fw-bolder mb-0">
                   SOLD OUT
                 </p>
               </div>
@@ -45,7 +45,7 @@ const Home = ({ records, homepage, latestAlbum }) => {
 
               <div className="w-25 mx-auto py-3 position-relative">
                 <NextImage image={latestAlbum[0].cover} />
-                <p className="position-absolute top-0 start-100 translate-middle-x badge bg-danger fs-4 fw-bolder mb-0">
+                <p className="pt-1 position-absolute top-0 start-100 translate-middle-x badge bg-danger fs-4 fw-bolder mb-0">
                   SOLD OUT
                 </p>
               </div>

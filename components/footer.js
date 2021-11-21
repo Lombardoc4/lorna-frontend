@@ -33,8 +33,8 @@ const Footer = () => {
           >
             <u>Shop</u>
           </a>
-          <div>
-            <h4 className="text-center">Listen Now</h4>
+          <h4 className="text-center">Listen Now</h4>
+          <div className="d-flex">
             <p>Spotify</p>
             <p>Apple Music</p>
           </div>

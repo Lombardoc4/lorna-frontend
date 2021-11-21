@@ -4,4 +4,5 @@ module.exports = {
     loader: 'custom',
     domains: ['https://lorna-shore-cp697.ondigitalocean.app/api/uploads'],
   },
+  trailingSlashes: true
 }
