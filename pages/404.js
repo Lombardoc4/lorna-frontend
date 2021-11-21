@@ -3,7 +3,7 @@ import Link from "next/link"
 const NotFound = () => {
 
   return (
-    <div className="not-found">
+    <div className="not-found my-5 p-3">
       <h2>No Page Here</h2>
       <h1>You&apos;re lost to the depths</h1>
       <h3>
