@@ -8,24 +8,8 @@ class MyDocument extends Document {
           {/* eslint-disable-next-line */}
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Cinzel:wght@900&family=Fira+Sans"
+            href="https://fonts.googleapis.com/css?family=Cinzel&family=Fira+Sans"
           />
-          {/* <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/uikit@3.9.1/dist/css/uikit.min.css"
-          />
-          <script
-            async
-            src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.9.0/js/uikit.min.js"
-          />
-          <script
-            async
-            src="https://cdn.jsdelivr.net/npm/uikit@3.9.1/dist/js/uikit-icons.min.js"
-          />
-          <script
-            async
-            src="https://cdn.jsdelivr.net/npm/uikit@3.9.1/dist/js/uikit.min.js"
-          /> */}
           <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
             rel="stylesheet"

@@ -8,8 +8,8 @@ const Records = ({ records }) => {
 
   return (
       <>
-        <h1 className="m-3 mb-0">Releases</h1>
-        <div className="container section pt-5 pt-lg-0">
+        <h1 className="container mt-3 mb-0">Releases</h1>
+        <div className="container section pt-3 pt-lg-0">
           <h2>Full Length</h2>
           <div className="row row-cols-sm-2 row-cols-md-3 g-0 mb-5">
             {studioAlbums.map((record) => {
