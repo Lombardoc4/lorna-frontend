@@ -6,7 +6,7 @@ const Home = ({ records, homepage }) => {
   return (
     <div id="releases">
       <Seo seo={homepage.seo} />
-      <div className="section">
+      <div className="section px-3">
         <Records records={records} />
       </div>
     </div>

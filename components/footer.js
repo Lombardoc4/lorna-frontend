@@ -40,16 +40,16 @@ const Footer = () => {
               <br className="d-md-none"/>
               <a className="text-reset" href="https://music.apple.com/us/artist/lorna-shore/385220213" target="_blank" rel="noreferrer">Apple Music</a>
             </div>
-            <div className="mt-auto">
-              <p className="mb-0 copyright text-right">© Lorna Shore 2021</p>
-            </div>
           </div>
         </div>
-        <div
+        <div className="mt-3 mb-5">
+          <p className="mb-5 copyright text-right">© Lorna Shore 2021</p>
+        </div>
+        {/* <div
           id="mobile-spacer"
           className="d-lg-none"
           style={{ height: "75px" }}
-        />
+        /> */}
       </div>
     </footer>
   )

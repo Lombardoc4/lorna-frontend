@@ -17,9 +17,9 @@ const Records = ({ records }) => {
 
 
   return (
-      <>
-        <h1 className="container pt-3 mb-0">Releases</h1>
-        <div className="container section pt-3 pt-lg-0">
+      <div className="py-5 py-lg-0">
+        <h1 className="container pt-5 pt-lg-3 mb-0">Releases</h1>
+        <div className="container section pt-3 py-lg-0">
           <h2>Full Length</h2>
           <div className="row row-cols-sm-2 row-cols-md-3 g-0 pb-5">
             {studioAlbums.map((record) => {
@@ -39,7 +39,7 @@ const Records = ({ records }) => {
             })}
           </div>
         </div>
-    </>
+    </div>
   )
 }
 
