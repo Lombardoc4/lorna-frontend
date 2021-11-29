@@ -7,9 +7,9 @@ import Seo from "../../components/seo"
 const albumDetails = ({ record, records }) => {
   const metaDescription = `Lorna Shora's ${record.name} ${record.albumType.charAt(0).toUpperCase() + record.albumType.slice(1)} released on ${record.releaseDate}`
   return (
-    <>
+    <div id="albumCard">
       <Seo metaTitle={record.name} metaDescription={metaDescription} shareImage={record.cover}/>
-      <div className="container section">
+      <div className="pt-5 container section">
         <div className="row g-0">
           <div className="col-md-6 order-2 order-md-1">
             <div className="albumType mb-3">
@@ -58,7 +58,9 @@ const albumDetails = ({ record, records }) => {
             </p>
           </div>
           <div className="col-md-5 order-1 order-md-2">
-            <NextImage image={record.cover} />
+            <div className="album-img">
+              <NextImage image={record.cover} />
+            </div>
           </div>
         </div>
       </div>
@@ -71,7 +73,7 @@ const albumDetails = ({ record, records }) => {
         </div>
       )}
       <Records records={records} />
-    </>
+    </div>
   )
 }
 

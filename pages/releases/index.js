@@ -4,12 +4,12 @@ import { fetchAPI } from "../../lib/api"
 
 const Home = ({ records, homepage }) => {
   return (
-    <>
+    <div id="releases">
       <Seo seo={homepage.seo} />
       <div className="section">
         <Records records={records} />
       </div>
-    </>
+    </div>
   )
 }
 

@@ -33,7 +33,7 @@ const Nav = () => {
             <Link href="/">
               <a
                 onClick={() => toggleNav()}
-                className="text-reset d-lg-none fs-5 my-2 my-lg-0"
+                className="text-reset d-lg-none my-2 my-lg-0"
               >
                 Home
               </a>
@@ -41,7 +41,7 @@ const Nav = () => {
             <Link href="/shows.html">
               <a
                 onClick={() => toggleNav()}
-                className="text-reset fs-5 my-2 my-lg-0"
+                className="text-reset my-2 my-lg-0"
               >
                 Shows
               </a>
@@ -49,7 +49,7 @@ const Nav = () => {
             <Link href="/releases.html">
               <a
                 onClick={() => toggleNav()}
-                className="text-reset fs-5 my-2 my-lg-0"
+                className="text-reset my-2 my-lg-0"
               >
                 Releases
               </a>
@@ -58,7 +58,7 @@ const Nav = () => {
               onClick={() => toggleNav()}
               href="https://www.youtube.com/channel/UC0nS0FSoouwc_Nm8g6DnH8w"
               target="_blank"
-              className="text-reset fs-5 my-2 my-lg-0"
+              className="text-reset my-2 my-lg-0"
               rel="noreferrer"
             >
               Videos
@@ -67,7 +67,7 @@ const Nav = () => {
               onClick={() => toggleNav()}
               href="https://lornashorestore.com/"
               target="_blank"
-              className="text-reset fs-5 my-2 my-lg-0"
+              className="text-reset my-2 my-lg-0"
               rel="noreferrer"
             >
               Shop

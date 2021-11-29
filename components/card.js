@@ -8,7 +8,9 @@ const RecordCard = ({ record }) => {
     <Link href={`/releases/${record.slug}.html`}>
       <a className="d-flex flex-wrap text-decoration-none" id={record.slug}>
         <div className="custom-card">
-          <NextImage image={record.cover} />
+          <div className="custom-card-img">
+            <NextImage image={record.cover} />
+          </div>
           <h5 id="title" className="mt-3">
             {record.name}
           </h5>

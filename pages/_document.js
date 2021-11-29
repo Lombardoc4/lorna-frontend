@@ -8,7 +8,7 @@ class MyDocument extends Document {
           {/* eslint-disable-next-line */}
           <link
             rel="stylesheet"
-            href="https://fonts.googleapis.com/css?family=Cinzel&family=Fira+Sans"
+            href="https://fonts.googleapis.com/css?family=Cinzel&family=Fira+Sans&display=swap"
           />
           <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
