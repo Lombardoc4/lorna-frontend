@@ -1,18 +1,33 @@
 import Script from "next/script"
+import Seo from "../components/seo"
 
-const Shows = () => {
+const Shows = (shows) => {
   return (
-    <div className="container">
-      <a
-        href="https://www.songkick.com/artists/3271811"
-        className="songkick-widget"
-        data-detect-style="true"
-        data-background-color="transparent"
-        data-locale="en"
-      ></a>
-      <Script src="//widget.songkick.com/3271811/widget.js" />
-    </div>
+    <Seo seo={shows}>
+      <div className="container">
+        <a
+          href="https://www.songkick.com/artists/3271811"
+          className="songkick-widget"
+          data-detect-style="true"
+          data-background-color="transparent"
+          data-locale="en"
+          ></a>
+        <Script src="//widget.songkick.com/3271811/widget.js" />
+      </div>
+    </Seo>
   )
+}
+
+export async function getStaticProps() {
+  // Run API calls in parallel
+  const [shows] = await Promise.all([
+    fetchAPI("/shows"),
+  ])
+
+  return {
+    props: { shows },
+    revalidate: 1,
+  }
 }
 
 export default Shows

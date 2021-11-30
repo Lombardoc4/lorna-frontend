@@ -2,10 +2,10 @@ import Records from "../../components/records"
 import Seo from "../../components/seo"
 import { fetchAPI } from "../../lib/api"
 
-const Home = ({ records, homepage }) => {
+const Home = ({ records, releases }) => {
   return (
     <div id="releases">
-      <Seo seo={homepage.seo} />
+      <Seo seo={releases.seo} />
       <div className="section px-3">
         <Records records={records} />
       </div>
@@ -15,13 +15,13 @@ const Home = ({ records, homepage }) => {
 
 export async function getStaticProps() {
   // Run API calls in parallel
-  const [records, homepage] = await Promise.all([
-    fetchAPI("/records"),
-    fetchAPI("/homepage"),
+  const [records, releases] = await Promise.all([
+    fetchAPI("/records?_sort=releaseDate:DESC"),
+    fetchAPI("/releases"),
   ])
 
   return {
-    props: { records, homepage },
+    props: { records, releases },
     revalidate: 1,
   }
 }
