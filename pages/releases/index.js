@@ -17,7 +17,7 @@ export async function getStaticProps() {
   // Run API calls in parallel
   const [records, releases] = await Promise.all([
     fetchAPI("/records?_sort=releaseDate:DESC"),
-    fetchAPI("/releases"),
+    fetchAPI("/homepage"),
   ])
 
   return {
