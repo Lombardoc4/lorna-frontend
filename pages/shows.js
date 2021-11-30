@@ -3,7 +3,7 @@ import Seo from "../components/seo"
 
 const Shows = ({shows}) => {
   return (
-    <Seo seo={shows}>
+    // <Seo seo={shows}>
       <div className="container">
         <a
           href="https://www.songkick.com/artists/3271811"
@@ -14,20 +14,20 @@ const Shows = ({shows}) => {
           ></a>
         <Script src="//widget.songkick.com/3271811/widget.js" />
       </div>
-    </Seo>
+    // </Seo>
   )
 }
 
-export async function getStaticProps() {
-  // Run API calls in parallel
-  const [shows] = await Promise.all([
-    fetchAPI("/homepage"),
-  ])
+// export async function getStaticProps() {
+//   // Run API calls in parallel
+//   const [shows] = await Promise.all([
+//     fetchAPI("/homepage"),
+//   ])
 
-  return {
-    props: { shows },
-    revalidate: 1,
-  }
-}
+//   return {
+//     props: { shows },
+//     revalidate: 1,
+//   }
+// }
 
 export default Shows
