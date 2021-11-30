@@ -1,7 +1,7 @@
 import Script from "next/script"
 import Seo from "../components/seo"
 
-const Shows = (shows) => {
+const Shows = ({shows}) => {
   return (
     <Seo seo={shows}>
       <div className="container">
