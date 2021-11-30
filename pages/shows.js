@@ -2,10 +2,10 @@ import Script from "next/script"
 import Seo from "../components/seo"
 import { fetchAPI } from "../lib/api"
 
-
 const Shows = ({shows}) => {
+  console.log(shows.seo);
   return (
-    <Seo seo={shows}>
+    <Seo seo={shows.seo}>
       <div className="container">
         <a
           href="https://www.songkick.com/artists/3271811"

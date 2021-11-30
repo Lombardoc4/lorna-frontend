@@ -4,7 +4,7 @@ import { fetchAPI } from "../../lib/api"
 
 const Home = ({ records, releases }) => {
   return (
-    <div id="releases">
+    <div>
       <Seo seo={releases.seo} />
       <div className="section px-3">
         <Records records={records} />
