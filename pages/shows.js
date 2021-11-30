@@ -20,9 +20,7 @@ const Shows = ({shows}) => {
 
 export async function getStaticProps() {
   // Run API calls in parallel
-  const [shows] = await Promise.all([
-    fetchAPI("/shows"),
-  ])
+  const shows = await fetchAPI("/shows");
 
   return {
     props: { shows },
