@@ -3,9 +3,9 @@ import Seo from "../components/seo"
 import { fetchAPI } from "../lib/api"
 
 const Shows = ({shows}) => {
-  console.log(shows.seo);
   return (
-    <Seo seo={shows.seo}>
+    <>
+      <Seo seo={shows.seo} />
       <div className="container">
         <a
           href="https://www.songkick.com/artists/3271811"
@@ -13,10 +13,10 @@ const Shows = ({shows}) => {
           data-detect-style="true"
           data-background-color="transparent"
           data-locale="en"
-          ></a>
+        ></a>
         <Script src="//widget.songkick.com/3271811/widget.js" />
       </div>
-    </Seo>
+    </>
   )
 }
 
