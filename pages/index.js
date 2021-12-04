@@ -146,13 +146,9 @@ const Home = ({ homepage, latestAlbum }) => {
               {/* <NextImage image={homepage.tour[homepage.tour.length-1]}/> */}
       </div>
       <div className="section">
-            <div className="py-5 position-relative " style={{backgroundImage: `url(${homepage.tour[homepage.tour.length-1].url})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center 25%', boxShadow: "#000 0px 5px 20px -10px inset, #000 0px -5px 20px -10px inset"}}>
+            <div className="homepage-final py-5 position-relative " style={{backgroundImage: `url(${homepage.tour[homepage.tour.length-1].url})`}}>
             {/* <NextImage image={homepage.tour[homepage.tour.length-1]}/> */}
                 <div className="py-3 py-lg-5"></div>
-                <h3 className="w-75 py-5 display-3 position-absolute top-50 start-50 translate-middle">
-                  It&apos;s me<br/>
-                  Will Ramos
-                  </h3>
                 <div className="py-5"></div>
                 <div className="py-3 py-lg-5"></div>
             </div>

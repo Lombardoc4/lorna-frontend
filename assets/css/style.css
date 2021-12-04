@@ -97,6 +97,14 @@ img:hover {
   transform: translateZ(-10px);
 }
 
+.homepage-final{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+
+  box-shadow: #000 0 5px 20px -10px inset, #000 0 -5px 20px -10px inset;
+}
+
 .not-found{
   text-align: center;
 }
@@ -199,6 +207,13 @@ footer{
 
   .navbar-collapse a{
     margin: 0 1rem;
+  }
+
+  .homepage-final{
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    height: 600px;
   }
 
   #releases{
