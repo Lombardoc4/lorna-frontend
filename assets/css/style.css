@@ -47,7 +47,55 @@ img:hover {
   color: #000;
 }
 
+/* Animations */
+.rotateCD-CW, .rotateCD-CCW{
+  /* transition: transform 0.6s; */
+  /* width: 100px; */
+  /* height: 100px; */
+  box-shadow: 0 10px 25px -10px #000;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(10px);
+}
 
+.rotateCD-CW{
+  animation: rotateCD-CW 10s linear infinite;
+}
+.rotateCD-CCW{
+  animation: rotateCD-CCW 10s linear infinite;
+}
+
+
+.rotateCD-left, .rotateCD-right, .rotateCD-back{
+  /* content: ""; */
+  /* display: block; */
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  background-color: black;
+  /* width: 10px; */
+  top: 0;
+}
+
+.rotateCD-left{
+  left: 0;
+  background-color: #808ca6;
+  transform: rotateY(-90deg) translateX(-5px) translateZ(5px);
+}
+
+.rotateCD-right{
+  right: 0;
+  transform: rotateY(-90deg) translateX(-5px) translateZ(-5px);
+}
+
+.rotateCD-back, .rotateCD-front{
+  /* Figure out what to put in back and  modify to  https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate3d() technique*/
+  width: 100%;
+}
+
+.rotateCD-back{
+  transform: translateZ(-10px);
+}
 
 .not-found{
   text-align: center;
@@ -156,7 +204,6 @@ footer{
   #releases{
     background-size: 25%;
   }
-
 }
 
 
@@ -251,4 +298,16 @@ footer{
   .navbar{
     color: #fff;
   }
+}
+
+
+
+/* rotateCD */
+@keyframes rotateCD-CW {
+  0%, 100% {transform: rotate3d(0, 1, 0, 0deg);}
+  50% {transform: rotate3d(0, 1, 0, 89deg);}
+}
+@keyframes rotateCD-CCW {
+  0%, 100% {transform: rotate3d(0, 1, 0, 0deg);}
+  50% {transform: rotate3d(0, 1, 0, -89deg);}
 }

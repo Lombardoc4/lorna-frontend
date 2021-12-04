@@ -34,16 +34,19 @@ const Footer = () => {
             </a>
           </u>
           <div className="d-flex flex-column">
-            <h4 className="text-center">Listen Now</h4>
-            <div className="d-md-flex justify-content-around">
-              <a className="text-reset" href="https://open.spotify.com/artist/6vXYoy8ouRVib302zxaxFF?si=3leWUb0STYeByjH355o-7A" target="_blank" rel="noreferrer">Spotify</a>
+            <h4 className="">Listen Now</h4>
+            <div className="">
+              <a className="text-reset me-3" href="https://open.spotify.com/artist/6vXYoy8ouRVib302zxaxFF?si=3leWUb0STYeByjH355o-7A" target="_blank" rel="noreferrer">Spotify</a>
               <br className="d-md-none"/>
-              <a className="text-reset" href="https://music.apple.com/us/artist/lorna-shore/385220213" target="_blank" rel="noreferrer">Apple Music</a>
+              <a className="text-reset me-3" href="https://music.apple.com/us/artist/lorna-shore/385220213" target="_blank" rel="noreferrer">Apple Music</a>
             </div>
           </div>
         </div>
         <div className="mt-3 mb-5">
-          <p className="mb-5 copyright text-right">© Lorna Shore 2021</p>
+          <p className="mb-5 pb-3 copyright text-right">
+            © Lorna Shore 2021<br/>
+            Photo Credits to James Perry
+          </p>
         </div>
         {/* <div
           id="mobile-spacer"
