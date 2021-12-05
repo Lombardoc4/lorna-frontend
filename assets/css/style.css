@@ -112,7 +112,10 @@ header {
 .homepage-final{
   background-size: cover;
   background-repeat: no-repeat;
-  height: 200px;
+  /* height: 200px; */
+  height: 100vh;
+  background-position: center;
+
 
   box-shadow: #000 0 5px 20px -10px inset, #000 0 -5px 20px -10px inset;
 }
@@ -296,9 +299,6 @@ footer{
   .album-img {
     border: 1px dotted white;
   }
-
-
-
 
   .albumType{
     color: #fff;

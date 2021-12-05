@@ -16,14 +16,14 @@ const Home = ({ homepage, latestAlbum }) => {
             {/* <NextImage image={homepage.tour[homepage.tour.length-1]}/> */}
 
                 <div className="container py-5 display-3 position-absolute top-50 start-50 translate-middle">
-                  <img src="lorna-logo-w.png" className="w-50 py-3"/>
-                  <div className="d-flex justify-content-around w-50">
+                  <img src="lorna-logo-w.png" className="w-100 py-3"/>
+                  <div className="d-flex flex-wrap justify-content-around mx-auto  w-75 w-md-50">
                     <Link href="/shows.html">
-                      <a className="btn btn-outline-light fs-4">
+                      <a className="mb-3 btn btn-outline-light fs-4">
                         Upcoming Shows
                       </a>
                     </Link>
-                    <div className="dropdown fs-4">
+                    <div className="mb-3 dropdown fs-4">
                       <button className="text-uppercase fs-4 btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Shops
                       </button>

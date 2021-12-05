@@ -17,8 +17,8 @@ const Records = ({ records }) => {
 
 
   return (
-      <div className="py-3 pt-md-5 pb-md-0">
-        <h1 className="container pt-5 pt-lg-3 mb-0">Releases</h1>
+      <div className="py-5 pb-md-0">
+        <h1 className="display-3 container pt-md-5 pt-lg-3 mb-0">Releases</h1>
         <div className="container section pt-3 py-lg-0">
           <h2>Full Length</h2>
           <div className="row row-cols-sm-2 row-cols-md-3 g-0 pb-5">

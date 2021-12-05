@@ -10,12 +10,15 @@ const Nav = () => {
 
   return (
     <header className="top-0 w-100">
-      <nav className="container navbar navbar-expand-lg navbar-light w-100 py-3">
+      <nav className="container navbar navbar-expand-lg navbar-light w-100 py-md-3">
         <a
-          className="navbar-brand d-lg-none m-0 w-100"
+          className="navbar-brand d-flex d-lg-none m-0 w-100"
           onClick={() => toggleNav()}
         >
-          <h1 className="mb-0 text-center fw-bolder">Lorna Shore</h1>
+
+            <img className="col-1 mx-auto" src="/favicon.png"/>
+          <h1 className="mb-0 text-center fw-bolder">
+          </h1>
         </a>
         <div
           className={`collapse navbar-collapse ${collapse && "show"}`}
@@ -33,7 +36,7 @@ const Nav = () => {
             <Link href="/">
               <a
                 onClick={() => toggleNav()}
-                className="nav-link text-decoration-underline text-reset  my-2 my-lg-0"
+                className="nav-link text-decoration-underline text-reset  my-1 my-lg-0"
               >
                 Home
               </a>
@@ -41,7 +44,7 @@ const Nav = () => {
             <Link href="/shows.html">
               <a
                 onClick={() => toggleNav()}
-                className="nav-link text-decoration-underline text-reset my-2 my-lg-0"
+                className="nav-link text-decoration-underline text-reset my-1 my-lg-0"
               >
                 Shows
               </a>
@@ -49,7 +52,7 @@ const Nav = () => {
             <Link href="/releases.html">
               <a
                 onClick={() => toggleNav()}
-                className="nav-link text-decoration-underline text-reset my-2 my-lg-0"
+                className="nav-link text-decoration-underline text-reset my-1 my-lg-0"
               >
                 Releases
               </a>
@@ -58,7 +61,7 @@ const Nav = () => {
               onClick={() => toggleNav()}
               href="https://www.youtube.com/channel/UC0nS0FSoouwc_Nm8g6DnH8w"
               target="_blank"
-              className="nav-link text-decoration-underline text-reset my-2 my-lg-0"
+              className="nav-link text-decoration-underline text-reset my-1 my-lg-0"
               rel="noreferrer"
             >
               Videos
@@ -67,7 +70,7 @@ const Nav = () => {
               onClick={() => toggleNav()}
               href="https://lornashorestore.com/"
               target="_blank"
-              className="nav-link text-decoration-underline text-reset my-2 my-lg-0"
+              className="nav-link text-decoration-underline text-reset my-1 my-lg-0"
               rel="noreferrer"
             >
               Shop

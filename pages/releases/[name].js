@@ -9,7 +9,7 @@ const albumDetails = ({ record, records }) => {
   return (
     <div id="albumCard" className="pt-3 pt-md-5">
       <Seo metaTitle={record.name} metaDescription={metaDescription} shareImage={record.cover}/>
-      <div className="pt-5 container section">
+      <div className="pt-md-5 container section">
         <div className="row g-0">
           <div className="col-md-6 order-2 order-md-1">
             <div className="albumType mb-3">
