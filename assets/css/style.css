@@ -26,6 +26,7 @@ img:hover {
   font-family: 'Cinzel', serif;
   position: fixed;
   top: 0;
+  transform: translateZ(25px);
 }
 
 .nav a {
@@ -169,18 +170,18 @@ img:hover {
   padding: 0 0.5rem;
 }
 
-.dropdown-toggle, .dropdown-menu, .navbar-toggler {
+#release .dropdown-toggle, #release .dropdown-menu, .navbar-toggler {
   background: #000;
   color: #fff;
 }
 
-.dropdown-toggle:hover, .dropdown-menu {
+#release .dropdown-toggle:hover, #release .dropdown-menu {
   border: 1px dotted #000;
   background: #fff;
   color: #000;
 }
 
-.dropdown-menu a{
+#release .dropdown-menu a{
   color: #000;
 }
 
@@ -213,7 +214,7 @@ footer{
     background-size: cover;
     background-position: top;
     background-attachment: fixed;
-    height: 600px;
+    height: 800px;
   }
 
   #releases{
@@ -287,18 +288,18 @@ footer{
     border: 1px dotted #fff;
   }
 
-  .dropdown-toggle, .dropdown-menu, .navbar-toggler {
+  #releases .dropdown-toggle, #releases .dropdown-menu, .navbar-toggler {
     background: #fff;
     color: #000;
   }
 
-  .dropdown-toggle:hover, .dropdown-menu {
+  #releases .dropdown-toggle:hover, #releases .dropdown-menu {
     border: 1px dotted #fff;
     background: #000;
     color: #fff;
   }
 
-  .dropdown-menu a{
+  #releases .dropdown-menu a{
     color: #fff;
   }
 

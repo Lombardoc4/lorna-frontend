@@ -9,7 +9,7 @@ const Nav = () => {
   }
 
   return (
-    <header>
+    <header className="position-fixed top-0 w-100 text-white" style={{textShadow: '1px 1px #000', zIndex: '1080'}}>
       <nav className="container navbar navbar-expand-lg navbar-light w-100 py-3">
         <a
           className="navbar-brand d-lg-none m-0 w-100"
@@ -25,7 +25,7 @@ const Nav = () => {
             <Link href="/">
               <a
                 onClick={() => toggleNav()}
-                className="text-reset text-decoration-none d-none d-lg-block m-0"
+                className="text-reset text-decoration-none d-none  m-0"
               >
                 <h1 className="mb-0 me-lg-3">Lorna Shore</h1>
               </a>
@@ -33,12 +33,12 @@ const Nav = () => {
             <Link href="/">
               <a
                 onClick={() => toggleNav()}
-                className="text-reset d-lg-none my-2 my-lg-0"
+                className="text-reset  my-2 my-lg-0"
               >
                 Home
               </a>
             </Link>
-            <Link href="/shows.html">
+            <Link as="/shows" href="/shows.html">
               <a
                 onClick={() => toggleNav()}
                 className="text-reset my-2 my-lg-0"
