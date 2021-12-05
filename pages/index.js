@@ -16,7 +16,7 @@ const Home = ({ homepage, latestAlbum }) => {
             {/* <NextImage image={homepage.tour[homepage.tour.length-1]}/> */}
 
                 <div className="container py-5 display-3 position-absolute top-50 start-50 translate-middle">
-                  <img src="lorna-logo-w.png" className="w-50"/>
+                  <img src="lorna-logo-w.png" className="w-50 py-3"/>
                   <div className="d-flex justify-content-around w-50">
                     <Link href="/shows.html">
                       <a className="btn btn-outline-light fs-4">
@@ -160,7 +160,7 @@ const Home = ({ homepage, latestAlbum }) => {
               </div>
                   </a>
 
-                  <h3 className="col text-center mt-3 mt-md-0 mb-0 order-1 order-md-2" style={{WebkitTextStroke: "2px black;"}}>Videos</h3>
+                  <h3 className="video-header col text-center mt-3 mt-md-0 mb-0 order-1 order-md-2">Videos</h3>
 
                   <a className="col-md-5 p-3 order-3" href="https://www.youtube.com/watch?v=xHE5g9YgkFg" target="_blank" rel="noreferrer">
 

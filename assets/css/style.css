@@ -18,6 +18,17 @@ img:hover {
   transition: opacity 0.25s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
+header {
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  z-index: 1080;
+  position: fixed;
+}
+
+#shows header{
+  color: #000;
+  text-shadow: 1px 1px #fff;
+}
 
 .nav{
   padding: 1rem 0;
@@ -121,7 +132,7 @@ img:hover {
 }
 
 
-#releases, #albumCard{
+#releases, .releases, #albumCard{
   background-image: url('/lorna-logo-w.png');
   background-size: 66%;
   background-position: center;
@@ -207,12 +218,12 @@ footer{
   }
 
   .navbar-collapse a{
-    margin: 0 1rem;
+    /* margin: 0 1rem; */
   }
 
   .homepage-final{
     background-size: cover;
-    background-position: top;
+    background-position: top left;
     background-attachment: fixed;
     height: 800px;
   }
@@ -222,12 +233,18 @@ footer{
   }
 }
 
-
+.video-header{
+  -webkit-text-stroke: 2px #000;
+}
 
 @media (prefers-color-scheme: dark) {
   body, .results {
     color: #fff;
     background-color: #000;
+  }
+
+  #shows header{
+    text-shadow: 1px 1px #000;
   }
 
   .navbar-toggler{
@@ -238,7 +255,7 @@ footer{
     color: #000;
   }
 
-  #releases, #albumCard{
+  #releases, .releases, #albumCard{
     background-image: url('/lorna-logo.png');
     /* background-size: 25%; */
   }
@@ -288,23 +305,27 @@ footer{
     border: 1px dotted #fff;
   }
 
-  #releases .dropdown-toggle, #releases .dropdown-menu, .navbar-toggler {
+  #albumCard .dropdown-toggle, #albumCard .dropdown-menu, .navbar-toggler {
     background: #fff;
     color: #000;
   }
 
-  #releases .dropdown-toggle:hover, #releases .dropdown-menu {
+  #albumCard .dropdown-toggle:hover, #albumCard .dropdown-menu {
     border: 1px dotted #fff;
     background: #000;
     color: #fff;
   }
 
-  #releases .dropdown-menu a{
+  #albumCard .dropdown-menu a{
     color: #fff;
   }
 
   footer{
     background-color: #000;
+  }
+
+  .video-header{
+    -webkit-text-stroke: 2px #fff;
   }
 
 }

@@ -7,7 +7,7 @@ import Seo from "../../components/seo"
 const albumDetails = ({ record, records }) => {
   const metaDescription = `Lorna Shora's ${record.name} ${record.albumType.charAt(0).toUpperCase() + record.albumType.slice(1)} released on ${record.releaseDate}`
   return (
-    <div id="albumCard">
+    <div id="albumCard" className="pt-3 pt-md-5">
       <Seo metaTitle={record.name} metaDescription={metaDescription} shareImage={record.cover}/>
       <div className="pt-5 container section">
         <div className="row g-0">
