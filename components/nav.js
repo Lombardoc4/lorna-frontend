@@ -76,7 +76,7 @@ const Nav = () => {
               Shop
             </a> */}
             <div className="dropdown">
-              <a href="#" className="nav-link text-decoration-underline text-reset dropdown-toggle" type="button" id="navbarDropdown"  data-bs-toggle="dropdown" aria-expanded="false">
+              <a href="#" className="nav-link text-decoration-underline text-reset dropdown-toggle" id="navbarDropdown"  data-bs-toggle="dropdown" aria-expanded="false">
                 Shops
               </a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
