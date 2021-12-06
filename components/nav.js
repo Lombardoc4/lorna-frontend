@@ -16,7 +16,7 @@ const Nav = () => {
           onClick={() => toggleNav()}
         >
 
-            <img className="col-1 mx-auto" src="/favicon.png"/>
+            <img className="col-1 mx-auto" src="/favicon.png" alt="Lorna Shore"/>
           <h1 className="mb-0 text-center fw-bolder">
           </h1>
         </a>

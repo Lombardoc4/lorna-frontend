@@ -16,8 +16,8 @@ const Home = ({ homepage, latestAlbum }) => {
             {/* <NextImage image={homepage.tour[homepage.tour.length-1]}/> */}
 
                 <div className="container py-5 display-3 position-absolute top-50 start-50 translate-middle">
-                  <img src="lorna-logo-w.png" className="w-100 py-3"/>
-                  <div className="d-flex flex-wrap justify-content-around mx-auto  w-75 w-md-50">
+                  <img src="lorna-logo-w.png" className="col-12 col-md-6 py-3" alt="Lorna Shore"/>
+                  <div className="d-flex flex-wrap justify-content-around mx-auto mx-md-0 col-9 col-md-6">
                     <Link href="/shows.html">
                       <a className="mb-3 btn btn-outline-light fs-4">
                         Upcoming Shows
@@ -155,7 +155,7 @@ const Home = ({ homepage, latestAlbum }) => {
 
               <div className="position-relative">
                   {/* <NextImage image={latestAlbum.cover}/> */}
-                  <img className=" rounded w-100" src="into-the-hellfire.webp"/>
+                  <img className="rounded w-100" src="into-the-hellfire.webp" alt="To The Hellfire"/>
                 <h3 className="fs-2 w-75 position-absolute top-50 start-50 translate-middle text-center" style={{color: 'white', textShadow: '1px 1px black'}}>To the Hellfire</h3>
               </div>
                   </a>
@@ -166,7 +166,7 @@ const Home = ({ homepage, latestAlbum }) => {
 
               <div className="position-relative">
                 {/* <NextImage image={latestAlbum.cover}/> */}
-                <img className=" rounded w-100" src="and-i-return-to-nothingness.webp"/>
+                <img className="rounded w-100" src="and-i-return-to-nothingness.webp" alt="And I Return to Nothingness"/>
 
                 <h3 className="fs-2 w-75 position-absolute top-50 start-50 translate-middle text-center" style={{color: 'white', textShadow: '1px 1px black'}}>And I Return To Nothingness</h3>
               </div>

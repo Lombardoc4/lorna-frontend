@@ -37,12 +37,12 @@ const Footer = () => {
             <h4 className="">Listen Now</h4>
             <div className="row g-0">
               <a className="text-reset col-4 col-md-2" href="https://open.spotify.com/artist/6vXYoy8ouRVib302zxaxFF?si=3leWUb0STYeByjH355o-7A" target="_blank" rel="noreferrer">
-                <img className="w-75" src="/Spotify_Icon_RGB_Green.png"/><br/>
+                <img className="w-75" src="/Spotify_Icon_RGB_Green.png" alt="Spotify"/><br/>
                 {/* Spotify */}
                 </a>
               <br className="d-md-none"/>
               <a className="text-reset col-4 col-md-2" href="https://music.apple.com/us/artist/lorna-shore/385220213?itsct=music_box_link&itscg=30200&ls=1&app=music" target="_blank" rel="noreferrer">
-                <img className="w-75" src="/Apple_Music_Icon_RGB_sm_073120.svg"/><br/>
+                <img className="w-75" src="/Apple_Music_Icon_RGB_sm_073120.svg" alt="Apple Music"/><br/>
                 {/* Apple Music */}
                 </a>
             </div>
