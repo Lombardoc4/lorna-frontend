@@ -234,7 +234,7 @@ footer{
 
   .homepage-final{
     background-size: cover;
-    background-position: top left;
+    background-position: left;
     background-attachment: fixed;
     height: 800px;
   }
