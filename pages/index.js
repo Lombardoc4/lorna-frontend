@@ -155,7 +155,7 @@ const Home = ({ homepage, latestAlbum }) => {
 
               <div className="position-relative">
                   {/* <NextImage image={latestAlbum.cover}/> */}
-                  <img className="rounded w-100" src="into-the-hellfire.webp" alt="To The Hellfire"/>
+                  <img className="rounded w-100" src="to-the-hellfire.webp" alt="To The Hellfire"/>
                 <h3 className="fs-2 w-75 position-absolute top-50 start-50 translate-middle text-center" style={{color: 'white', textShadow: '1px 1px black'}}>To the Hellfire</h3>
               </div>
                   </a>
