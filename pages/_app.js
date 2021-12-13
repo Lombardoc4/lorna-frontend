@@ -43,9 +43,9 @@ const MyApp = ({ Component, pageProps }) => {
       const buttons = document.getElementsByTagName('a');
       let i = 0;
       while(i <= buttons.length - 1 ) {
-        buttons[i].addEventListener('click touchstart', async (e) => {
+        buttons[i].addEventListener('click', async (e) => {
           e.preventDefault();
-
+          console.log('click');
           await fetchAPI('/analytics', {
             method: 'POST',
             headers: {
