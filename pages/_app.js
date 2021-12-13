@@ -1,7 +1,7 @@
 import App from "next/app"
 import Head from "next/head"
 import "../assets/css/style.css"
-import { createContext } from "react"
+import { createContext, useEffect } from "react"
 import { fetchAPI } from "../lib/api"
 import { getStrapiMedia } from "../lib/media"
 import Layout from "../components/layout"
@@ -11,6 +11,55 @@ export const GlobalContext = createContext({})
 
 const MyApp = ({ Component, pageProps }) => {
   const { global } = pageProps
+
+  useEffect(() => {
+    // fetchAPI('/analytics', {
+    //   method:  'POST',
+    //   body: JSON.stringify({
+    //     "data": {
+    //       "action": "load",
+    //       "event": ,
+    //     }
+    //   }),
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   }
+    // })
+    if (!window.location.href.includes('localhost')){
+
+      fetchAPI('/analytics', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          event: window.location.href,
+          action: 'load'
+        }),
+      })
+      // .then(response => response.json())
+      // .then(data => console.log(data));
+      // You now have access to `window`
+      const buttons = document.getElementsByTagName('a');
+      let i = 0;
+      while(i <= buttons.length - 1 ) {
+        buttons[i].addEventListener('click touchstart', () => {
+          fetchAPI('/analytics', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              base: window.location.href,
+              action: 'click/touch',
+              event: buttons[i].href,
+            })
+          })
+        })
+        i++;
+      }
+    }
+  }, [])
 
   return (
     <>
