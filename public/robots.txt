@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: lornashore.band/
+
+# Sitemaps
+Sitemap: lornashore.band/sitemap.xml
