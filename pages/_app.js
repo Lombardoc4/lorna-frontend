@@ -39,12 +39,14 @@ const MyApp = ({ Component, pageProps }) => {
       })
       // .then(response => response.json())
       // .then(data => console.log(data));
-      // You now have access to `window`
+      // You now have access to `window`n
       const buttons = document.getElementsByTagName('a');
       let i = 0;
       while(i <= buttons.length - 1 ) {
-        buttons[i].addEventListener('click touchstart', () => {
-          fetchAPI('/analytics', {
+        buttons[i].addEventListener('click touchstart', async (e) => {
+          e.preventDefault();
+
+          await fetchAPI('/analytics', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
@@ -55,6 +57,8 @@ const MyApp = ({ Component, pageProps }) => {
               event: buttons[i].href,
             })
           })
+
+          window.location = buttons[i].href;
         })
         i++;
       }
