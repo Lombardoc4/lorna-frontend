@@ -15,7 +15,7 @@ const MyApp = ({ Component, pageProps }) => {
   const router = useRouter();
   useEffect(() => {
 
-      fetchAPI('/participation', {
+      fetchAPI('/participations', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -35,7 +35,7 @@ const MyApp = ({ Component, pageProps }) => {
           e.preventDefault();
           const url = new URL(e.target.href);
           try {
-            let response = await fetchAPI('/participation', {
+            let response = await fetchAPI('/participations', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
