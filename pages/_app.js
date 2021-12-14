@@ -33,7 +33,6 @@ const MyApp = ({ Component, pageProps }) => {
       while(i <= buttons.length - 1 ) {
         buttons[i].addEventListener('click', async (e) => {
           e.preventDefault();
-          const url = new URL(e.target.href);
           try {
             let response = await fetchAPI('/participations', {
               method: 'POST',
@@ -43,7 +42,7 @@ const MyApp = ({ Component, pageProps }) => {
               body: JSON.stringify({
                 path: window.location.pathname,
                 action: 'click/touch',
-                event: url.pathname,
+                event: e.target.href,
               })
             })
           } catch(err) {
