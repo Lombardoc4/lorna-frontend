@@ -44,7 +44,7 @@ const Home = ({ homepage, latestAlbum }) => {
               <Link key={tourImg.name} href="/shows.html">
               <a className="g-0 flex-grow-1 " >
                 <NextImage image={tourImg}/>
-                <span class="position-absolute opacity-0 top-0 start-0">Upcoming Shows</span>
+                <span className="position-absolute opacity-0 top-0 start-0">Upcoming Shows</span>
 
               </a>
               </Link>
@@ -90,7 +90,7 @@ const Home = ({ homepage, latestAlbum }) => {
                 <div className="d-flex justify-content-around my-5 row-cols-3 row-cols-md-4">
                 <Link href="/releases/and-i-return-to-nothingness.html">
                       <a className="text-reset">
-                      <span class="position-absolute opacity-0 top-0 start-0">And I Return To Nothingness</span>
+                      <span className="position-absolute opacity-0 top-0 start-0">And I Return To Nothingness</span>
 
                   <div className="rotateCD-CW">
                     <div className="rotateCD-front">
@@ -105,7 +105,7 @@ const Home = ({ homepage, latestAlbum }) => {
                     </Link>
                     <Link href="/releases/and-i-return-to-nothingness.html">
                       <a className=" text-reset">
-                      <span class="position-absolute opacity-0 top-0 start-0">And I Return To Nothingness</span>
+                      <span className="position-absolute opacity-0 top-0 start-0">And I Return To Nothingness</span>
 
                   <div className="rotateCD-CCW">
                     <div className="rotateCD-front">
