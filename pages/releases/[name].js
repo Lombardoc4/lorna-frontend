@@ -102,7 +102,7 @@ export async function getStaticProps({ params }) {
       record: record[0],
       records,
     },
-    revalidate: 1,
+    // revalidate: 1,
   }
 }
 
