@@ -5,7 +5,7 @@ import NextImage from "./image"
 
 const RecordCard = ({ record }) => {
   return (
-    <Link href={`/releases/${record.slug}.html`}>
+    <Link href={`/releases/${record.slug}.html`} prefetch={false}>
       <a className="d-flex flex-wrap text-decoration-none" id={record.slug}>
         <div className="custom-card">
           <div className="custom-card-img">
