@@ -24,7 +24,7 @@ const Shows = ({shows}) => {
           data-detect-style="true"
           data-background-color="transparent"
           data-locale="en"
-        ></a>
+        >Upcoming</a>
         <Script src="//widget.songkick.com/3271811/widget.js" />
       </div>
     </>

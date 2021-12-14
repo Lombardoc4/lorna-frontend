@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: lornashore.band/
+Host: https://lornashore.band/
 
 # Sitemaps
-Sitemap: lornashore.band/sitemap.xml
+Sitemap: https://lornashore.band/sitemap.xml

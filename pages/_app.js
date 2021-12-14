@@ -25,7 +25,7 @@ const MyApp = ({ Component, pageProps }) => {
     //     'Content-Type': 'application/json',
     //   }
     // })
-    if (!window.location.href.includes('localhost')){
+    // if (!window.location.href.includes('localhost')){
 
       fetchAPI('/analytics', {
         method: 'POST',
@@ -45,24 +45,24 @@ const MyApp = ({ Component, pageProps }) => {
       while(i <= buttons.length - 1 ) {
         buttons[i].addEventListener('click', async (e) => {
           e.preventDefault();
-          console.log('click');
+          console.log('click', e.target);
           await fetchAPI('/analytics', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
             },
             body: JSON.stringify({
-              base: window.location.href,
+              path: window.location.pathname,
               action: 'click/touch',
-              event: buttons[i].href,
+              event: e.target.href,
             })
           })
 
-          window.location = buttons[i].href;
+          window.location = e.target.href;
         })
         i++;
       }
-    }
+    // }
   }, [])
 
   return (
