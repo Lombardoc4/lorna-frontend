@@ -6,7 +6,6 @@ import { fetchAPI } from "../lib/api"
 
 const Home = ({ homepage, latestAlbum }) => {
   latestAlbum = latestAlbum[0];
-  console.log(homepage);
   return (
     <>
       <Seo seo={homepage.seo} />
@@ -59,7 +58,6 @@ const Home = ({ homepage, latestAlbum }) => {
           <div style={{backgroundImage: `url(${homepage.seo.shareImage.url})`, backgroundSize: 'cover', backgroundPosition: 'center', boxShadow: "#000 0px 5px 20px -10px inset, #000 0px -5px 20px -10px inset"}}>
             <div className="py-5 text-center" >
               {latestAlbum.songList.map(song => {
-                console.log(song)
                 return (
                   <h1 key={song} className="display-3" style={{WebkitTextStroke: '2px black', WebkitTextFillColor: 'transparent'}}>
                      {song}
