@@ -24,14 +24,16 @@ const Footer = () => {
             >
               Youtube
             </a>
-            <a
-              href="https://lornashorestore.com/"
-              target="_blank"
-              className="text-reset"
-              rel="noreferrer"
-            >
-              Shop
-            </a>
+            <div className="dropdown">
+              <a href="#" className="nav-link text-decoration-underline text-reset dropdown-toggle" id="navbarDropdown"  data-bs-toggle="dropdown" aria-expanded="false">
+                Shops
+              </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a className="dropdown-item" href="https://lornashorestore.com/">US Store</a></li>
+                <li><a className="dropdown-item" href="https://www.impericon.com/de/lorna-shore.html?sort=online%3Adesc">EU Store</a></li>
+                <li><a className="dropdown-item" href="https://www.indiemerchstore.com/collections/vendors?q=Lorna%20Shore">Indiemerch</a></li>
+              </ul>
+            </div>
           </u>
           <div className="d-flex flex-column">
             <h4 className="">Listen Now</h4>

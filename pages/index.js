@@ -17,7 +17,7 @@ const Home = ({ homepage, latestAlbum }) => {
                 <div className="container py-5 display-3 position-absolute top-50 start-50 translate-middle">
                   <img src="lorna-logo-w.png" className="col-12 col-md-6 py-3" alt="Lorna Shore"/>
                   <div className="d-flex flex-wrap justify-content-around mx-auto mx-md-0 col-9 col-md-6">
-                    <Link href="/shows.html">
+                    <Link href="/shows">
                       <a className="mb-3 btn btn-outline-light fs-4">
                         Upcoming Shows
                       </a>
@@ -41,7 +41,7 @@ const Home = ({ homepage, latestAlbum }) => {
         {homepage.tour.map((tourImg, i) => {
           if (i + 1 !== homepage.tour.length){
             return (
-              <Link key={tourImg.name} href="/shows.html">
+              <Link key={tourImg.name} href="/shows">
               <a className="g-0 flex-grow-1 " >
                 <NextImage image={tourImg}/>
                 <span className="position-absolute opacity-0 top-0 start-0">Upcoming Shows</span>
@@ -66,9 +66,6 @@ const Home = ({ homepage, latestAlbum }) => {
                   </h1>
                 )
                 })}
-            {/* <Link href="/releases/and-i-return-to-nothingness.html">
-              <a className="text-reset"><h2 className="display-5">View Album Now</h2></a>
-            </Link> */}
             </div>
           <div className="container text-center">
                 {/* <div className="w-25 mx-auto">
@@ -88,7 +85,7 @@ const Home = ({ homepage, latestAlbum }) => {
 
 
                 <div className="d-flex justify-content-around my-5 row-cols-3 row-cols-md-4">
-                <Link href="/releases/and-i-return-to-nothingness.html">
+                <Link href="/releases/and-i-return-to-nothingness">
                       <a className="text-reset">
                       <span className="position-absolute opacity-0 top-0 start-0">And I Return To Nothingness</span>
 
@@ -103,7 +100,7 @@ const Home = ({ homepage, latestAlbum }) => {
                   </div>
                       </a>
                     </Link>
-                    <Link href="/releases/and-i-return-to-nothingness.html">
+                    <Link href="/releases/and-i-return-to-nothingness">
                       <a className=" text-reset">
                       <span className="position-absolute opacity-0 top-0 start-0">And I Return To Nothingness</span>
 

@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-const NotFound = () => {
+function Custom404() {
 
   return (
     <div className="not-found my-5 p-3">
@@ -16,4 +16,4 @@ const NotFound = () => {
   )
 }
 
-export default NotFound
+export default Custom404
