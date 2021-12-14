@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: localhost:3000/
+Host: https://lornashore.band/
 
 # Sitemaps
-Sitemap: localhost:3000/sitemap.xml
+Sitemap: https://lornashore.band/sitemap.xml
