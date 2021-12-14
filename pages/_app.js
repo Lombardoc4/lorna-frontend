@@ -14,21 +14,8 @@ const MyApp = ({ Component, pageProps }) => {
   const { global } = pageProps
   const router = useRouter();
   useEffect(() => {
-    // fetchAPI('/analytics', {
-    //   method:  'POST',
-    //   body: JSON.stringify({
-    //     "data": {
-    //       "action": "load",
-    //       "event": ,
-    //     }
-    //   }),
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   }
-    // })
-    // if (!window.location.href.includes('localhost')){
 
-      fetchAPI('/analytics', {
+      fetchAPI('/participation', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -48,7 +35,7 @@ const MyApp = ({ Component, pageProps }) => {
           e.preventDefault();
           const url = new URL(e.target.href);
           try {
-            let response = await fetchAPI('/analytics', {
+            let response = await fetchAPI('/participation', {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
