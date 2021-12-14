@@ -44,6 +44,8 @@ const Home = ({ homepage, latestAlbum }) => {
               <Link key={tourImg.name} href="/shows.html">
               <a className="g-0 flex-grow-1 " >
                 <NextImage image={tourImg}/>
+                <span class="position-absolute opacity-0 top-0 start-0">Upcoming Shows</span>
+
               </a>
               </Link>
             )
@@ -88,6 +90,7 @@ const Home = ({ homepage, latestAlbum }) => {
                 <div className="d-flex justify-content-around my-5 row-cols-3 row-cols-md-4">
                 <Link href="/releases/and-i-return-to-nothingness.html">
                       <a className="text-reset">
+                      <span class="position-absolute opacity-0 top-0 start-0">And I Return To Nothingness</span>
 
                   <div className="rotateCD-CW">
                     <div className="rotateCD-front">
@@ -102,6 +105,7 @@ const Home = ({ homepage, latestAlbum }) => {
                     </Link>
                     <Link href="/releases/and-i-return-to-nothingness.html">
                       <a className=" text-reset">
+                      <span class="position-absolute opacity-0 top-0 start-0">And I Return To Nothingness</span>
 
                   <div className="rotateCD-CCW">
                     <div className="rotateCD-front">
@@ -154,7 +158,7 @@ const Home = ({ homepage, latestAlbum }) => {
               <div className="position-relative">
                   {/* <NextImage image={latestAlbum.cover}/> */}
                   <img className="rounded w-100" src="to-the-hellfire.webp" alt="To The Hellfire"/>
-                <h3 className="fs-2 w-75 position-absolute top-50 start-50 translate-middle text-center" style={{color: 'white', textShadow: '1px 1px black'}}>To the Hellfire</h3>
+                <h2 className="fs-2 w-75 position-absolute top-50 start-50 translate-middle text-center" style={{color: 'white', textShadow: '1px 1px black'}}>To the Hellfire</h2>
               </div>
                   </a>
 
@@ -166,7 +170,7 @@ const Home = ({ homepage, latestAlbum }) => {
                 {/* <NextImage image={latestAlbum.cover}/> */}
                 <img className="rounded w-100" src="and-i-return-to-nothingness.webp" alt="And I Return to Nothingness"/>
 
-                <h3 className="fs-2 w-75 position-absolute top-50 start-50 translate-middle text-center" style={{color: 'white', textShadow: '1px 1px black'}}>And I Return To Nothingness</h3>
+                <h2 className="fs-2 w-75 position-absolute top-50 start-50 translate-middle text-center" style={{color: 'white', textShadow: '1px 1px black'}}>And I Return To Nothingness</h2>
               </div>
               </a>
             </div>
