@@ -21,7 +21,7 @@ const MyApp = ({ Component, pageProps }) => {
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          event: window.location.href,
+          event: window.location.pathname,
           action: 'load'
         }),
       })
