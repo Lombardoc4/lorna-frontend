@@ -47,17 +47,22 @@ const MyApp = ({ Component, pageProps }) => {
         buttons[i].addEventListener('click', async (e) => {
           e.preventDefault();
           const url = new URL(e.target.href);
-          await fetchAPI('/analytics', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              path: window.location.pathname,
-              action: 'click/touch',
-              event: url.pathname,
+          try {
+            let response = await fetchAPI('/analytics', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                path: window.location.pathname,
+                action: 'click/touch',
+                event: url.pathname,
+              })
             })
-          })
+          } catch(err) {
+            console.log('adBlocker', err); // TypeError: failed to fetch
+          }
+
 
           router.push(e.target.href);
         })
