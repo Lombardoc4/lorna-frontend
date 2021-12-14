@@ -5,13 +5,14 @@ import { createContext, useEffect } from "react"
 import { fetchAPI } from "../lib/api"
 import { getStrapiMedia } from "../lib/media"
 import Layout from "../components/layout"
+import { useRouter } from "next/router"
 
 // Store Strapi Global object in context
 export const GlobalContext = createContext({})
 
 const MyApp = ({ Component, pageProps }) => {
   const { global } = pageProps
-
+  const router = useRouter();
   useEffect(() => {
     // fetchAPI('/analytics', {
     //   method:  'POST',
@@ -45,7 +46,7 @@ const MyApp = ({ Component, pageProps }) => {
       while(i <= buttons.length - 1 ) {
         buttons[i].addEventListener('click', async (e) => {
           e.preventDefault();
-          console.log('click', e.target);
+          const url = new URL(e.target.href);
           await fetchAPI('/analytics', {
             method: 'POST',
             headers: {
@@ -54,16 +55,16 @@ const MyApp = ({ Component, pageProps }) => {
             body: JSON.stringify({
               path: window.location.pathname,
               action: 'click/touch',
-              event: e.target.href,
+              event: url.pathname,
             })
           })
 
-          window.location = e.target.href;
+          router.push(e.target.href);
         })
         i++;
       }
     // }
-  }, [])
+  }, [router])
 
   return (
     <>

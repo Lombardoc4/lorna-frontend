@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url><loc>https://lornashore.band</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-13T20:56:36.105Z</lastmod></url>
-<url><loc>https://lornashore.band/releases</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-13T20:56:36.105Z</lastmod></url>
-<url><loc>https://lornashore.band/shows</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-13T20:56:36.105Z</lastmod></url>
-<url><loc>https://lornashore.band/releases/and-i-return-to-nothingness</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-13T20:56:36.105Z</lastmod></url>
-<url><loc>https://lornashore.band/releases/immortal</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-13T20:56:36.105Z</lastmod></url>
-<url><loc>https://lornashore.band/releases/psalms</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-13T20:56:36.105Z</lastmod></url>
-<url><loc>https://lornashore.band/releases/flesh-coffin</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-13T20:56:36.105Z</lastmod></url>
-<url><loc>https://lornashore.band/releases/bone-kingdom</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-13T20:56:36.105Z</lastmod></url>
-<url><loc>https://lornashore.band/releases/maleficium</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-13T20:56:36.105Z</lastmod></url>
-<url><loc>https://lornashore.band/releases/the-absolution-of-hatred</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-13T20:56:36.105Z</lastmod></url>
+<url><loc>localhost:3000</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-14T00:34:22.806Z</lastmod></url>
+<url><loc>localhost:3000/releases</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-14T00:34:22.806Z</lastmod></url>
+<url><loc>localhost:3000/shows</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-14T00:34:22.806Z</lastmod></url>
+<url><loc>localhost:3000/en/shows</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-14T00:34:22.806Z</lastmod></url>
+<url><loc>localhost:3000/en</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-14T00:34:22.806Z</lastmod></url>
+<url><loc>localhost:3000/en/releases</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-14T00:34:22.806Z</lastmod></url>
+<url><loc>localhost:3000/en/releases/and-i-return-to-nothingness</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-14T00:34:22.806Z</lastmod></url>
+<url><loc>localhost:3000/en/releases/immortal</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-14T00:34:22.806Z</lastmod></url>
+<url><loc>localhost:3000/en/releases/psalms</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-14T00:34:22.806Z</lastmod></url>
+<url><loc>localhost:3000/en/releases/flesh-coffin</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-14T00:34:22.806Z</lastmod></url>
+<url><loc>localhost:3000/en/releases/bone-kingdom</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-14T00:34:22.806Z</lastmod></url>
+<url><loc>localhost:3000/en/releases/maleficium</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-14T00:34:22.806Z</lastmod></url>
+<url><loc>localhost:3000/en/releases/the-absolution-of-hatred</loc><changefreq>daily</changefreq><priority>0.7</priority><lastmod>2021-12-14T00:34:22.806Z</lastmod></url>
 </urlset>
