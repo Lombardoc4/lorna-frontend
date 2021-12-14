@@ -11,9 +11,9 @@ const RecordCard = ({ record }) => {
           <div className="custom-card-img">
             <NextImage image={record.cover} />
           </div>
-          <h5 id="title" className="mt-3">
+          <h2 id="title" className="h5 mt-3">
             {record.name}
-          </h5>
+          </h2>
           <p id="release" className="mb-0">
             {record.releaseDate}
           </p>
