@@ -15,16 +15,18 @@ const MyApp = ({ Component, pageProps }) => {
   const router = useRouter();
   useEffect(() => {
 
-      fetchAPI('/participations', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          event: window.location.pathname,
-          action: 'load'
-        }),
-      })
+    console.log('loadded');
+
+      // fetchAPI('/participations', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify({
+      //     event: window.location.pathname,
+      //     action: 'load'
+      //   }),
+      // })
       // .then(response => response.json())
       // .then(data => console.log(data));
       // You now have access to `window`n
