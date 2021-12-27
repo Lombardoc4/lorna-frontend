@@ -13,6 +13,28 @@ export const GlobalContext = createContext({})
 const MyApp = ({ Component, pageProps }) => {
   const { global } = pageProps
   const router = useRouter();
+  const partPoints = async (e) => {
+    e.preventDefault();
+    try {
+      let response = await fetchAPI('/participations', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          path: window.location.pathname,
+          action: 'click/touch',
+          event: e.target.href,
+        })
+      })
+    } catch(err) {
+      console.log('adBlocker', err); // TypeError: failed to fetch
+    }
+
+
+    router.push(e.target.href);
+  }
+
   useEffect(() => {
 
     console.log('loadded');
@@ -31,33 +53,24 @@ const MyApp = ({ Component, pageProps }) => {
       // .then(data => console.log(data));
       // You now have access to `window`n
       const buttons = document.getElementsByTagName('a');
+
+
       let i = 0;
       while(i <= buttons.length - 1 ) {
-        buttons[i].addEventListener('click', async (e) => {
-          e.preventDefault();
-          try {
-            let response = await fetchAPI('/participations', {
-              method: 'POST',
-              headers: {
-                'Content-Type': 'application/json',
-              },
-              body: JSON.stringify({
-                path: window.location.pathname,
-                action: 'click/touch',
-                event: e.target.href,
-              })
-            })
-          } catch(err) {
-            console.log('adBlocker', err); // TypeError: failed to fetch
-          }
-
-
-          router.push(e.target.href);
-        })
+        buttons[i].addEventListener('click', partPoints)
         i++;
       }
     // }
-  }, [router])
+  }, [partPoints])
+
+  useEffect( () => () => {
+    const buttons = document.getElementsByTagName('a');
+      let i = 0;
+      while(i <= buttons.length - 1 ) {
+        buttons[i].removeEventListener('click', partPoints)
+        i++;
+      }
+    }, [partPoints] );
 
   return (
     <>
