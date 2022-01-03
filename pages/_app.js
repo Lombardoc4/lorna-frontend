@@ -31,8 +31,17 @@ const MyApp = ({ Component, pageProps }) => {
       console.log('adBlocker', err); // TypeError: failed to fetch
     }
 
+    let i = 0;
+    let el = e.target;
+    while (i <= 3) {
+      if (el.href) {
+        return router.push(el.href);
+      } else {
+        el = el.parentNode;
+        i++;
+      }
+    }
 
-    router.push(e.target.href);
   }
 
   useEffect(() => {
@@ -59,7 +68,7 @@ const MyApp = ({ Component, pageProps }) => {
         i++;
       }
     // }
-  }, [partPoints])
+  }, [])
 
   useEffect( () => () => {
     const buttons = document.getElementsByTagName('a');
@@ -68,7 +77,7 @@ const MyApp = ({ Component, pageProps }) => {
         buttons[i].removeEventListener('click', partPoints)
         i++;
       }
-    }, [partPoints] );
+    }, [] );
 
   return (
     <>

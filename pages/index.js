@@ -68,21 +68,6 @@ const Home = ({ homepage, latestAlbum }) => {
                 })}
             </div>
           <div className="container text-center">
-                {/* <div className="w-25 mx-auto">
-
-                <NextImage image={latestAlbum[0].cover} />
-                </div> */}
-
-
-
-                {/* <p style={{paddingTop: '0.5em'}} className="position-absolute top-0 start-100 translate-middle-x badge bg-danger fs-4 fw-bolder mb-0">
-                  SOLD OUT
-                // </p> */}
-                {/* // <h1 className="display-1 fw-bolder text-white text-reset" style={{textShadow: "1px 1px white"}}>
-                //   ...And I Return To<br/>Nothingness
-                // </h1> */}
-
-
 
                 <div className="d-flex justify-content-around my-5 row-cols-3 row-cols-md-4">
                 <Link href="/releases/and-i-return-to-nothingness">
@@ -95,7 +80,17 @@ const Home = ({ homepage, latestAlbum }) => {
                     </div>
                     <div className="rotateCD-left"></div>
                     <div className="rotateCD-right"></div>
-                    <div className="rotateCD-back">
+                    <div className="rotateCD-back d-flex flex-column align-items-center justify-content-center list-unstyled text-white font-cinzel">
+                      <img src="/favicon.png" alt="" style={{width: '30px'}} width='30px' height='30px'/>
+                      {latestAlbum.songList.map(song => {
+                        return (
+                          <li key={song} className="py-2 bold">
+                            {song}
+                          </li>
+                        )
+                      })}
+                      <img src="/favicon.png" alt="" style={{width: '30px'}} width='30px' height='30px'/>
+
                     </div>
                   </div>
                       </a>
@@ -110,7 +105,18 @@ const Home = ({ homepage, latestAlbum }) => {
                     </div>
                     <div className="rotateCD-left"></div>
                     <div className="rotateCD-right"></div>
-                    <div className="rotateCD-back">
+                    <div className="rotateCD-back d-flex flex-column align-items-center justify-content-center list-unstyled text-white font-cinzel">
+                    <img src="/favicon.png" alt="" style={{width: '30px'}} width='30px' height='30px'/>
+
+                      {latestAlbum.songList.map(song => {
+                          return (
+                            <li key={song} className="py-2 bold">
+                              {song}
+                            </li>
+                          )
+                        })}
+                      <img src="/favicon.png" alt="" style={{width: '30px'}} width='30px' height='30px'/>
+
                     </div>
                   </div>
 
@@ -150,13 +156,13 @@ const Home = ({ homepage, latestAlbum }) => {
       </div>
       <div className="section container pt-md-0" >
       <div className="row g-0 py-md-3 justify-content-around align-items-center">
-                  <a className="col-md-5 p-3 order-2 order-md-1" href="https://www.youtube.com/watch?v=qyYmS_iBcy4" target="_blank" rel="noreferrer">
+                  <a className="col-md-5 p-3 order-2 order-md-1 position-relative" href="https://www.youtube.com/watch?v=qyYmS_iBcy4" target="_blank" rel="noreferrer">
 
-              <div className="position-relative">
-                  {/* <NextImage image={latestAlbum.cover}/> */}
-                  <img className="rounded w-100" src="to-the-hellfire.webp" alt="To The Hellfire"/>
-                <h2 className="fs-2 w-75 position-absolute top-50 start-50 translate-middle text-center" style={{color: 'white', textShadow: '1px 1px black'}}>To the Hellfire</h2>
-              </div>
+                    {/* <div className="position-relative"> */}
+                        {/* <NextImage image={latestAlbum.cover}/> */}
+                      <img className="rounded w-100" src="to-the-hellfire.webp" alt="To The Hellfire"/>
+                      <h2 className="fs-2 w-75 position-absolute top-50 start-50 translate-middle text-center" style={{color: 'white', textShadow: '1px 1px black'}}>To the Hellfire</h2>
+                    {/* </div> */}
                   </a>
 
                   <h3 className="video-header col text-center mt-3 mt-md-0 mb-0 order-1 order-md-2">Videos</h3>

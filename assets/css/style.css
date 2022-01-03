@@ -1,6 +1,6 @@
 * {
-  font-family: 'Fira-Sans', sans-serif;
-  text-transform: uppercase;
+  /* font-family: 'Fira-Sans', sans-serif; */
+  /* text-transform: uppercase; */
 }
 
 h1, h2, h3, h4, h5 {
@@ -23,6 +23,10 @@ header {
   text-shadow: 1px 1px #000;
   z-index: 1080;
   position: fixed;
+}
+
+* .font-cinzel{
+  font-family: 'Cinzel', serif !important;
 }
 
 #shows header, #releases header{
@@ -75,17 +79,17 @@ header {
 }
 
 .rotateCD-CW{
-  animation: rotateCD-CW 10s linear infinite;
+  animation: rotateCD-CW 30s linear infinite;
 }
 .rotateCD-CCW{
-  animation: rotateCD-CCW 10s linear infinite;
+  animation: rotateCD-CCW 30s linear infinite;
 }
 
 
 .rotateCD-left, .rotateCD-right, .rotateCD-back{
   /* content: ""; */
   /* display: block; */
-  width: 10px;
+  width: 6px;
   height: 100%;
   position: absolute;
   background-color: black;
@@ -95,13 +99,13 @@ header {
 
 .rotateCD-left{
   left: 0;
-  background-color: #808ca6;
-  transform: rotateY(-90deg) translateX(-5px) translateZ(5px);
+  transform: rotateY(-90deg) translateX(-3px) translateZ(3px);
 }
 
 .rotateCD-right{
   right: 0;
-  transform: rotateY(-90deg) translateX(-5px) translateZ(-5px);
+  background-color: #808ca6;
+  transform: rotateY(-90deg) translateX(-3px) translateZ(-3px);
 }
 
 .rotateCD-back, .rotateCD-front{
@@ -110,7 +114,8 @@ header {
 }
 
 .rotateCD-back{
-  transform: translateZ(-10px);
+
+  transform: translateZ(-6px) scaleX(-1);
 }
 
 .homepage-final{
@@ -360,9 +365,9 @@ footer{
 /* rotateCD */
 @keyframes rotateCD-CW {
   0%, 100% {transform: rotate3d(0, 1, 0, 0deg);}
-  50% {transform: rotate3d(0, 1, 0, 89deg);}
+  50% {transform: rotate3d(0, 1, 0, 359deg);}
 }
 @keyframes rotateCD-CCW {
   0%, 100% {transform: rotate3d(0, 1, 0, 0deg);}
-  50% {transform: rotate3d(0, 1, 0, -89deg);}
+  50% {transform: rotate3d(0, 1, 0, -359deg);}
 }
