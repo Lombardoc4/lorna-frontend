@@ -81,15 +81,8 @@ const Home = ({ homepage, latestAlbum }) => {
                     <div className="rotateCD-left"></div>
                     <div className="rotateCD-right"></div>
                     <div className="rotateCD-back d-flex flex-column align-items-center justify-content-center list-unstyled text-white font-cinzel">
-                      <img src="/favicon.png" alt="" style={{width: '30px'}} width='30px' height='30px'/>
-                      {latestAlbum.songList.map(song => {
-                        return (
-                          <li key={song} className="py-2 bold">
-                            {song}
-                          </li>
-                        )
-                      })}
-                      <img src="/favicon.png" alt="" style={{width: '30px'}} width='30px' height='30px'/>
+                      <img src="/favicon.png" alt="" style={{width: '100%', height: '100%', filter: 'invert(1)'}} width='30px' height='30px'/>
+
 
                     </div>
                   </div>
@@ -106,17 +99,7 @@ const Home = ({ homepage, latestAlbum }) => {
                     <div className="rotateCD-left"></div>
                     <div className="rotateCD-right"></div>
                     <div className="rotateCD-back d-flex flex-column align-items-center justify-content-center list-unstyled text-white font-cinzel">
-                    <img src="/favicon.png" alt="" style={{width: '30px'}} width='30px' height='30px'/>
-
-                      {latestAlbum.songList.map(song => {
-                          return (
-                            <li key={song} className="py-2 bold">
-                              {song}
-                            </li>
-                          )
-                        })}
-                      <img src="/favicon.png" alt="" style={{width: '30px'}} width='30px' height='30px'/>
-
+                      <img src="/favicon.png" alt="" style={{width: '100%', height: '100%', filter: 'invert(1)'}} width='30px' height='30px'/>
                     </div>
                   </div>
 
