@@ -12,7 +12,6 @@ const Home = ({ homepage, latestAlbum }) => {
 
       <div className="section">
             <div className="homepage-final py-5 position-relative " style={{backgroundImage: `url(${homepage.tour[homepage.tour.length-1].url})`}}>
-            {/* <NextImage image={homepage.tour[homepage.tour.length-1]}/> */}
 
                 <div className="container py-5 display-3 position-absolute top-50 start-50 translate-middle">
                   <img src="lorna-logo-w.png" className="col-12 col-md-6 py-3" alt="Lorna Shore"/>
@@ -52,7 +51,6 @@ const Home = ({ homepage, latestAlbum }) => {
           }
         })}
       </div>
-
 
       <div className="section pt-md-0">
 
