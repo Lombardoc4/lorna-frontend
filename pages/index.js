@@ -103,9 +103,7 @@ const Home = ({ homepage, latestAlbum }) => {
                     </Link>
                 </div>
               </div>
-
           </div>
-
 
             <div className="d-none position-absolute top-50 start-50 translate-middle text-center text-reset text-decoration-none">
 
