@@ -34,7 +34,9 @@ const MyApp = ({ Component, pageProps }) => {
     let i = 0;
     let el = e.target;
     while (i <= 3) {
-      if (el.href) {
+      if (el.href && el.classList.contains('blank')) {
+        return window.open(el.href, '_blank');
+      } else if (el.href) {
         return router.push(el.href);
       } else {
         el = el.parentNode;

@@ -17,12 +17,12 @@ const Home = ({ homepage, latestAlbum }) => {
                   <img src="lorna-logo-w.png" className="col-12 col-md-6 py-3" alt="Lorna Shore"/>
                   <div className="d-flex flex-wrap justify-content-around mx-auto mx-md-0 col-9 col-md-6">
                     <Link href="/shows">
-                      <a className="mb-3 btn btn-outline-light fs-4">
+                      <a className="text-uppercase fw-bold mb-3 btn btn-outline-light fs-4">
                         Upcoming Shows
                       </a>
                     </Link>
                     <div className="mb-3 dropdown fs-4">
-                      <button className="text-uppercase fs-4 btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <button className="text-uppercase fw-bold fs-4 btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                         Shops
                       </button>
                       <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -43,7 +43,7 @@ const Home = ({ homepage, latestAlbum }) => {
               <Link key={tourImg.name} href="/shows">
               <a className="g-0 flex-grow-1 " >
                 <NextImage image={tourImg}/>
-                <span className="position-absolute opacity-0 top-0 start-0">Upcoming Shows</span>
+                <span className="position-absolute opacity-0 top-0 start-0">Shows</span>
 
               </a>
               </Link>
@@ -123,18 +123,16 @@ const Home = ({ homepage, latestAlbum }) => {
       </div>
       <div className="section container pt-md-0" >
       <div className="row g-0 py-md-3 justify-content-around align-items-center">
-                  <a className="col-md-5 p-3 order-2 order-md-1 position-relative" href="https://www.youtube.com/watch?v=qyYmS_iBcy4" target="_blank" rel="noreferrer">
-                      <img className="rounded w-100" src="to-the-hellfire.webp" alt="To The Hellfire"/>
-                      <h2 className="fs-2 w-75 position-absolute top-50 start-50 translate-middle text-center" style={{color: 'white', textShadow: '1px 1px black'}}>To the Hellfire</h2>
-                  </a>
+              <a className="col-md-5 p-3 order-2 order-md-1 position-relative blank" href="https://www.youtube.com/watch?v=qyYmS_iBcy4" target="_blank" rel="noreferrer">
+                  <img className="rounded w-100" src="to-the-hellfire.webp" alt="To The Hellfire"/>
+                  <h2 className="fs-2 w-75 position-absolute top-50 start-50 translate-middle text-center" style={{color: 'white', textShadow: '1px 1px black'}}>To the Hellfire</h2>
+              </a>
 
-                  <h3 className="video-header col text-center mt-3 mt-md-0 mb-0 order-1 order-md-2">Videos</h3>
+              <h3 className="video-header col text-center mt-3 mt-md-0 mb-0 order-1 order-md-2">Videos</h3>
 
-
-                  <a className="position-relative col-md-5 p-3 order-3" href="https://www.youtube.com/watch?v=xHE5g9YgkFg" target="_blank" rel="noreferrer">
-                  <img className="rounded w-100" src="and-i-return-to-nothingness.webp" alt="And I Return to Nothingness"/>
-
-                  <h2 className="fs-2 w-75 position-absolute top-50 start-50 translate-middle text-center" style={{color: 'white', textShadow: '1px 1px black'}}>And I Return To Nothingness</h2>
+              <a className="position-relative col-md-5 p-3 order-3 blank" href="https://www.youtube.com/watch?v=xHE5g9YgkFg" target="_blank" rel="noreferrer">
+                <img className="rounded w-100" src="and-i-return-to-nothingness.webp" alt="And I Return to Nothingness"/>
+                <h2 className="fs-2 w-75 position-absolute top-50 start-50 translate-middle text-center" style={{color: 'white', textShadow: '1px 1px black'}}>And I Return To Nothingness</h2>
               </a>
             </div>
       </div>
