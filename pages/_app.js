@@ -58,9 +58,8 @@ const MyApp = ({ Component, pageProps }) => {
           action: 'load'
         }),
       })
-      // .then(response => response.json())
-      // .then(data => console.log(data));
-      // You now have access to `window`n
+
+      // You now have access to `window`
       const buttons = document.getElementsByTagName('a');
 
 
