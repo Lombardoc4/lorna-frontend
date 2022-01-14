@@ -82,8 +82,6 @@ const Home = ({ homepage, latestAlbum }) => {
                     <div className="rotateCD-right"></div>
                     <div className="rotateCD-back d-flex flex-column align-items-center justify-content-center list-unstyled text-white font-cinzel">
                       <img src="/favicon.png" alt="" style={{width: '100%', height: '100%', filter: 'invert(1)'}} width='30px' height='30px'/>
-
-
                     </div>
                   </div>
                       </a>
@@ -110,62 +108,38 @@ const Home = ({ homepage, latestAlbum }) => {
 
           </div>
 
-          {/* <Link href="https://lornashorestore.com/">
-            <a className="d-md-none position-absolute top-50 start-50 translate-middle text-center display-1 fw-bolder text-white">
-              <h1 className="mb-0">Store</h1>
-            </a>
-          </Link> */}
 
-          {/* <Link href="https://lornashorestore.com/products/lorna-shore-and-i-return-to-nothingness-cd-ep"> */}
             <div className="d-none position-absolute top-50 start-50 translate-middle text-center text-reset text-decoration-none">
-              {/* <div className="row row-cols-md-2"> */}
-              {/* </div> */}
 
               <div className="container py-5">
                 <div className="w-25 mx-auto">
 
                 <NextImage image={latestAlbum.cover} />
                 </div>
-                {/* <p style={{paddingTop: '0.5em'}} className="position-absolute top-0 start-100 translate-middle-x badge bg-danger fs-4 fw-bolder mb-0">
-                  SOLD OUT
-                </p> */}
                 <h1 className="display-1 fw-bolder text-white text-reset" style={{textShadow: "1px 1px white"}}>
                   ...And I Return To<br/>Nothingness
                 </h1>
               </div>
             </div>
-          {/* </Link> */}
         </div>
       </div>
       <div className="section container pt-md-0" >
       <div className="row g-0 py-md-3 justify-content-around align-items-center">
                   <a className="col-md-5 p-3 order-2 order-md-1 position-relative" href="https://www.youtube.com/watch?v=qyYmS_iBcy4" target="_blank" rel="noreferrer">
-
-                    {/* <div className="position-relative"> */}
-                        {/* <NextImage image={latestAlbum.cover}/> */}
                       <img className="rounded w-100" src="to-the-hellfire.webp" alt="To The Hellfire"/>
                       <h2 className="fs-2 w-75 position-absolute top-50 start-50 translate-middle text-center" style={{color: 'white', textShadow: '1px 1px black'}}>To the Hellfire</h2>
-                    {/* </div> */}
                   </a>
 
                   <h3 className="video-header col text-center mt-3 mt-md-0 mb-0 order-1 order-md-2">Videos</h3>
 
 
-                {/* <div className="position-relative"> */}
                   <a className="position-relative col-md-5 p-3 order-3" href="https://www.youtube.com/watch?v=xHE5g9YgkFg" target="_blank" rel="noreferrer">
-                  {/* <NextImage image={latestAlbum.cover}/> */}
                   <img className="rounded w-100" src="and-i-return-to-nothingness.webp" alt="And I Return to Nothingness"/>
 
                   <h2 className="fs-2 w-75 position-absolute top-50 start-50 translate-middle text-center" style={{color: 'white', textShadow: '1px 1px black'}}>And I Return To Nothingness</h2>
               </a>
-                {/* </div> */}
             </div>
-              {/* <NextImage image={homepage.tour[homepage.tour.length-1]}/> */}
       </div>
-
-
-      {/* <Records records={records} /> */}
-      {/* <Events events={events} /> */}
     </>
   )
 }
