@@ -54,7 +54,7 @@ const Home = ({ homepage, latestAlbum }) => {
 
       <div className="section pt-md-0">
 
-        <div className="row g-0 position-relative">
+        <div className="row g-0 position-relative py-5">
           <div style={{backgroundImage: `url(${homepage.seo.shareImage.url})`, backgroundSize: 'cover', backgroundPosition: 'center', boxShadow: "#000 0px 5px 20px -10px inset, #000 0px -5px 20px -10px inset"}}>
             <div className="py-5 text-center" >
               {latestAlbum.songList.map(song => {
