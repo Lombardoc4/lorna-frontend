@@ -1,4 +1,4 @@
 module.exports = {
-    siteUrl: 'localhost:3000/',
+    siteUrl: 'https://lornashore.band',
     generateRobotsTxt: true,
   }
