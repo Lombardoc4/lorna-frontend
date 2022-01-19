@@ -54,7 +54,7 @@ const Footer = () => {
           <p className="mb-5 pb-3 mb-lg-0 pb-lg-0 copyright text-right">
             © Lorna Shore 2021<br/>
             Site by <a className="text-reset" href="https://crislombardo.com">Cris Lombardo</a><br/>
-            Photo Credits to <a className="text-reset" href="https://www.instagram.com/jame_sperry/">James Sperry</a>
+            Photo Credits to <a className="text-reset" href="https://www.instagram.com/jame_sperry/">James Perry</a>
           </p>
         </div>
         {/* <div
