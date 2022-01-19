@@ -34,6 +34,7 @@ const Shows = ({shows}) => {
 
   return (
     <>
+      <p className="d-none"></p>
       <Seo seo={shows.seo} />
       <div className="container py-md-5">
         <h1 className="pt-3">Shows</h1>
