@@ -3,6 +3,18 @@ import Seo from "../components/seo"
 import NextImage from "../components/image"
 import Link from "next/link"
 import { fetchAPI } from "../lib/api"
+import { motion } from "framer-motion"
+
+const FadeInX = ({  direction, children, ...rest }) => {
+  console.log(rest);
+  return <motion.div
+    initial={{ opacity: 0, x: direction ? parseInt(direction + 50) : 0}}
+    whileInView={{ opacity: 1, x: 0 }}
+    transition={{ delay: 0.3 }}
+    {...rest}
+  >{children}</motion.div>
+}
+
 
 const Home = ({ homepage, latestAlbum }) => {
   latestAlbum = latestAlbum[0];
@@ -12,7 +24,7 @@ const Home = ({ homepage, latestAlbum }) => {
 
       <div className="section">
             <div className="homepage-final py-5 position-relative " style={{backgroundImage: `url(${homepage.tour[homepage.tour.length-1].url})`}}>
-
+              <FadeInX viewport={{ once: true }}>
                 <div className="container py-5 display-3 position-absolute top-50 start-50 translate-middle">
                   <img src="lorna-logo-w.png" className="col-12 col-md-6 py-3" alt="Lorna Shore"/>
                   <div className="d-flex flex-wrap justify-content-around mx-auto mx-md-0 col-9 col-md-6">
@@ -33,20 +45,23 @@ const Home = ({ homepage, latestAlbum }) => {
                     </div>
                   </div>
                 </div>
+              </FadeInX>
             </div>
       </div>
 
-      <div className="section pt-md-0 row g-0 row-cols-md-2" >
+      <div className="bg-black overflow-hidden section pt-md-0 row g-0 row-cols-md-2" >
         {homepage.tour.map((tourImg, i) => {
           if (i + 1 !== homepage.tour.length){
             return (
-              <Link key={tourImg.name} href="/shows">
+              <FadeInX direction={i % 2 === 0 ? '-' : '+'}  key={tourImg.name}>
+              <Link href="/shows">
               <a className="g-0 flex-grow-1 " >
                 <NextImage image={tourImg}/>
                 <span className="position-absolute opacity-0 top-0 start-0">Shows</span>
 
               </a>
               </Link>
+              </FadeInX>
             )
           }
         })}
@@ -54,8 +69,8 @@ const Home = ({ homepage, latestAlbum }) => {
 
       <div className="section pt-md-0">
 
-        <div className="row g-0 position-relative py-5">
-          <div style={{backgroundImage: `url(${homepage.seo.shareImage.url})`, backgroundSize: 'cover', backgroundPosition: 'center', boxShadow: "#000 0px 5px 20px -10px inset, #000 0px -5px 20px -10px inset"}}>
+        <div className="row g-0 position-relative">
+          <div className="py-5" style={{backgroundImage: `url(${homepage.seo.shareImage.url})`, backgroundSize: 'cover', backgroundPosition: 'center', boxShadow: "#000 0px 5px 20px -10px inset, #000 0px -5px 20px -10px inset"}}>
             <div className="py-5 text-center" >
               {latestAlbum.songList.map(song => {
                 return (
